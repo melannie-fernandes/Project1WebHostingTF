@@ -60,7 +60,7 @@ resource "aws_s3_object" "error" {
 }
 ```
 5. Setting permissions for website access
-Step 1: Edit S3 Block Public Access settings
+Step 1: Edit S3 Block Public Access settings details refer https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html 
 ```
 resource "aws_s3_bucket_public_access_block" "project1bucket" {
   bucket = aws_s3_bucket.project1bucket.id
